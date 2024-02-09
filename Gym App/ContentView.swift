@@ -11,26 +11,47 @@ struct ContentView: View {
     @State private var shouldShowMenu = true
     var body: some View {
         VStack {
-            Image("hyunjun")
-                .resizable()
-                .cornerRadius(3)
-                .aspectRatio(contentMode:
-                        .fit)
+            //            Button {
+            //                print("HOW TO SWIFT CODE")
+            //
+            //            } label: {
+            //                Image("jaykim")
+            //                    .resizable()
+            //                    .aspectRatio(contentMode:
+            //                            .fit)
+            //            }
             Button {
-                print("HOW TO SWIFT CODE")
+                
             } label: {
-                Image("jaykim")
-                    .resizable()
-                    .aspectRatio(contentMode:
-                            .fit)
+                Text("please work")
+                    .multilineTextAlignment(.trailing)
+                    .lineLimit(nil)
+                    .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
+                    .contextMenu(shouldShowMenu ? menuItems : nil)
+                    .position(CGPoint(x: 300.0, y: 10.0))
             }
-            Text("making some progress idk")
         }
-       
+        .contextMenu(ContextMenu(menuItems: {
+            Text("Sign In")
+            Text("Sign out")
+            Text("Tracker")
+        }))
         .padding()
     }
+       
+    }
+private let menuItems = ContextMenu {
+    Button {
+        // Add this item to a list of favorites.
+    } label: {
+        Label("Click to sign in", systemImage: "heart")
+    }
+    Button {
+        // Open Maps and center it on this item.
+    } label: {
+        Label("Click to sign out", systemImage: "house.fill")
+    }
 }
-
 
 #Preview {
     ContentView()
