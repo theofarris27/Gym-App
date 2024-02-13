@@ -18,6 +18,7 @@ struct navigationBarTest: View {
     private var fillImage: String {
         selectedTab.rawValue + ".fill"
     }
+        
     var body: some View {
         VStack{
             HStack{
