@@ -9,17 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var shouldShowMenu = true
+    @State private var selectedTab: Tab = .camera
     var body: some View {
         VStack {
-            //            Button {
-            //                print("HOW TO SWIFT CODE")
-            //
-            //            } label: {
-            //                Image("jaykim")
-            //                    .resizable()
-            //                    .aspectRatio(contentMode:
-            //                            .fit)
-            //            }
+           
             Button {
                 
             } label: {
@@ -37,6 +30,8 @@ struct ContentView: View {
             Text("Tracker")
         }))
         .padding()
+        navigationBarTest(selectedTab: $selectedTab)
+            .position(CGPoint(x: 195.0, y: 700.0))
     }
        
     }
