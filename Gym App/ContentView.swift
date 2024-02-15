@@ -41,7 +41,8 @@ struct ContentView: View {
                                                RoundedRectangle(cornerRadius: 10)
                                                    .stroke(.blue, lineWidth: 2)
                                            }
-                                           .padding(.horizontal)
+                                        
+                                           .padding(15)
 
                                            HStack {
                                                Group {
@@ -55,9 +56,9 @@ struct ContentView: View {
                                                                    prompt: Text("Password").foregroundColor(.red)) // How to change the color of the TextField Placeholder
                                                    }
                                                }
-                                               .padding(10)
+                                               .padding(8)
                                                .overlay {
-                                                   RoundedRectangle(cornerRadius: 10)
+                                                   RoundedRectangle(cornerRadius: 8)
                                                        .stroke(.red, lineWidth: 2) // How to add rounded corner to a TextField and change it colour
                                                }
 
@@ -86,7 +87,7 @@ Spacer()
                                                LinearGradient(colors: [.gray], startPoint: .topLeading, endPoint: .bottomTrailing) :
                                                    LinearGradient(colors: [.blue, .red], startPoint: .topLeading, endPoint: .bottomTrailing)
                                            )
-                                           .cornerRadius(20)
+                                           .cornerRadius(15)
                                            .disabled(isSignInButtonDisabled) // how to disable while some condition is applied
                                            .padding()
                                 Spacer()
