@@ -14,10 +14,10 @@
             filePath = "Gym App/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "body"
-            landmarkType = "24">
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "ContentView"
+            landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -30,10 +30,10 @@
             filePath = "Gym App/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "ContentView"
-            landmarkType = "14">
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
