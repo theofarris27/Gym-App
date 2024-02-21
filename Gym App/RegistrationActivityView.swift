@@ -37,7 +37,7 @@ struct RegistrationActivityView: View {
                        }
                        
                    }) {
-                       Text("Sign in")
+                       Text("Register")
                    }
                    
                    if showError {
