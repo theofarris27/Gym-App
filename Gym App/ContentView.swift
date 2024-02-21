@@ -7,12 +7,16 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
     @State private var shouldShowMenu = true
     @State private var selectedTab: Tab = .camera
     @State var name: String = ""
     @State var password: String = ""
     @State var showPassword: Bool = false
+    @State var signInSuccess = false
+    @State var showView = false
     
     var isSignInButtonDisabled: Bool {
           [name, password].contains(where: \.isEmpty)
@@ -31,8 +35,7 @@ struct ContentView: View {
                         VStack{
                             if(tab.rawValue == "leaf") {
                                 Spacer()
-                                           
-                                           TextField("Name",
+                                        TextField("Name",
                                                      text: $name ,
                                                      prompt: Text("Login").foregroundColor(.blue)
                                            )
@@ -70,7 +73,22 @@ struct ContentView: View {
                                                }
 
                                            }.padding(.horizontal)
-Spacer()
+                                NavigationView {
+                                    VStack {
+                                        Button {
+                                        print("*** Login in progress... ***")
+                                            init<S>(
+                                                _ title: S,
+                                                @ViewBuilder destination: () -> RegistrationActivityView
+                                            ) where S : StringProtocol
+                                        } label: {
+                                            Text("Register")
+                                                .bold()
+                                        }
+                                    }
+                                }
+                               
+                                            Spacer()
                                            Button {
                                                print("do login action")
                                                
@@ -90,6 +108,7 @@ Spacer()
                                            .cornerRadius(15)
                                            .disabled(isSignInButtonDisabled) // how to disable while some condition is applied
                                            .padding()
+                               
                                 Spacer()
                             }
                             else if(tab.rawValue == "camera"){

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6407F6B22B869FF400BA5351 /* RegistrationActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6407F6B12B869FF400BA5351 /* RegistrationActivityView.swift */; };
 		646609E32B7C1B5A005BBEE1 /* contextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646609E22B7C1B5A005BBEE1 /* contextMenu.swift */; };
 		647690BD2B76D6300097782D /* navigationBarTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647690BC2B76D6300097782D /* navigationBarTest.swift */; };
 		64A3922B2B61B86F00E9A2C0 /* Gym_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A3922A2B61B86F00E9A2C0 /* Gym_AppApp.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6407F6B12B869FF400BA5351 /* RegistrationActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationActivityView.swift; sourceTree = "<group>"; };
 		646609E22B7C1B5A005BBEE1 /* contextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contextMenu.swift; sourceTree = "<group>"; };
 		647690BC2B76D6300097782D /* navigationBarTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigationBarTest.swift; sourceTree = "<group>"; };
 		64A392272B61B86F00E9A2C0 /* Gym App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +106,7 @@
 				646609E22B7C1B5A005BBEE1 /* contextMenu.swift */,
 				64A3922E2B61B87300E9A2C0 /* Assets.xcassets */,
 				64A392302B61B87300E9A2C0 /* Preview Content */,
+				6407F6B12B869FF400BA5351 /* RegistrationActivityView.swift */,
 			);
 			path = "Gym App";
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6407F6B22B869FF400BA5351 /* RegistrationActivityView.swift in Sources */,
 				64A3922D2B61B86F00E9A2C0 /* ContentView.swift in Sources */,
 				64A3922B2B61B86F00E9A2C0 /* Gym_AppApp.swift in Sources */,
 				646609E32B7C1B5A005BBEE1 /* contextMenu.swift in Sources */,
