@@ -18,12 +18,12 @@ struct RegistrationActivityView: View {
         VStack {
                    HStack {
                        Text("User name")
-                       TextField("type here", text: $userName)
+                       TextField("Type Here", text: $userName)
                    }.padding()
                    
                    HStack {
                        Text(" Password")
-                       TextField("type here", text: $password)
+                       TextField("Type Here", text: $password)
                            .textContentType(.password)
                    }.padding()
                    
@@ -37,7 +37,7 @@ struct RegistrationActivityView: View {
                        }
                        
                    }) {
-                       Text("Sign in")
+                       Text("Register")
                    }
                    
                    if showError {

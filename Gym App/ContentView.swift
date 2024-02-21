@@ -75,16 +75,9 @@ struct ContentView: View {
                                            }.padding(.horizontal)
                                 NavigationView {
                                     VStack {
-                                        Button {
-                                        print("*** Login in progress... ***")
-                                            init<S>(
-                                                _ title: S,
-                                                @ViewBuilder destination: () -> RegistrationActivityView
-                                            ) where S : StringProtocol
-                                        } label: {
-                                            Text("Register")
-                                                .bold()
-                                        }
+                                            NavigationLink(destination: RegistrationActivityView(signInSuccess: $signInSuccess)) {
+                                                Text("register")
+                                            }
                                     }
                                 }
                                
