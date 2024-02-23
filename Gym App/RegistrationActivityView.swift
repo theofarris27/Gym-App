@@ -17,7 +17,7 @@ struct RegistrationActivityView: View {
     var body: some View {
         VStack {
                    HStack {
-                       Text("User name")
+                       Text("Username")
                        TextField("Type Here", text: $userName)
                    }.padding()
                    
