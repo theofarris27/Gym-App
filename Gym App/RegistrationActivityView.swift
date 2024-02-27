@@ -17,14 +17,18 @@ struct RegistrationActivityView: View {
     var body: some View {
         VStack {
                    HStack {
-                       Text("User name")
-                       TextField("type here", text: $userName)
+                       Text("Username")
+                       TextField("Type Here", text: $userName)
+                           .autocapitalization(.none)
+                           .autocorrectionDisabled()
                    }.padding()
                    
                    HStack {
                        Text(" Password")
-                       TextField("type here", text: $password)
+                       TextField("Type Here", text: $password)
                            .textContentType(.password)
+                           .autocapitalization(.none)
+                           .autocorrectionDisabled()
                    }.padding()
                    
                    Button(action: {
@@ -37,7 +41,7 @@ struct RegistrationActivityView: View {
                        }
                        
                    }) {
-                       Text("Register")
+                       Text("Create Account")
                    }
                    
                    if showError {
