@@ -12,14 +12,13 @@ import SwiftUI
 struct ContentView: View {
     @State private var shouldShowMenu = true
     @State private var selectedTab: Tab = .camera
-    @State var name: String = ""
-    @State var password: String = ""
+    @StateObject var viewModel = LoginViewViewModel()
     @State var showPassword: Bool = false
     @State var signInSuccess = false
     @State var showView = false
     
     var isSignInButtonDisabled: Bool {
-          [name, password].contains(where: \.isEmpty)
+        [viewModel.email, viewModel.password].contains(where: \.isEmpty)
       }
       
 
@@ -39,7 +38,7 @@ struct ContentView: View {
                                 
                            Spacer()
                                         TextField("Name",
-                                                     text: $name ,
+                                                  text: $viewModel.email ,
                                                      prompt: Text("Login").foregroundColor(.blue)
                                            )
                                            .padding(10)
@@ -54,11 +53,11 @@ struct ContentView: View {
                                                Group {
                                                    if showPassword {
                                                        TextField("Password", // how to create a secure text field
-                                                                   text: $password,
+                                                                 text: $viewModel.password,
                                                                    prompt: Text("Password").foregroundColor(.red)) // How to change the color of the TextField Placeholder
                                                    } else {
                                                        SecureField("Password", // how to create a secure text field
-                                                                   text: $password,
+                                                                   text: $viewModel.password,
                                                                    prompt: Text("Password").foregroundColor(.red)) // How to change the color of the TextField Placeholder
                                                    }
                                                }
