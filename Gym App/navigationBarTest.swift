@@ -11,6 +11,7 @@ enum Tab: String, CaseIterable {
     case camera
     case house
     case leaf
+    case person
 }
 
 struct navigationBarTest: View {

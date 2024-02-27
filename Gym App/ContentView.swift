@@ -32,9 +32,12 @@ struct ContentView: View {
             VStack{
                 TabView(selection: $selectedTab) {
                     ForEach(Tab.allCases, id: \.rawValue) { tab in
+                        
                         VStack{
                             if(tab.rawValue == "leaf") {
-                                Spacer()
+                              
+                                
+                           Spacer()
                                         TextField("Name",
                                                      text: $name ,
                                                      prompt: Text("Login").foregroundColor(.blue)
@@ -73,15 +76,9 @@ struct ContentView: View {
                                                }
 
                                            }.padding(.horizontal)
-                                NavigationView {
-                                    VStack {
-                                            NavigationLink(destination: RegistrationActivityView(signInSuccess: $signInSuccess)) {
-                                                Text("register")
-                                            }
-                                    }
-                                }
+                                
                                
-                                            Spacer()
+                        
                                            Button {
                                                print("do login action")
                                                
@@ -101,8 +98,13 @@ struct ContentView: View {
                                            .cornerRadius(15)
                                            .disabled(isSignInButtonDisabled) // how to disable while some condition is applied
                                            .padding()
-                               
-                                Spacer()
+                                NavigationView {
+                                    VStack {
+                                            NavigationLink(destination: RegistrationActivityView(signInSuccess: $signInSuccess)) {
+                                                Text("register")
+                                            }
+                                    }
+                                }
                             }
                             else if(tab.rawValue == "camera"){
                                     Image(systemName: tab.rawValue)
