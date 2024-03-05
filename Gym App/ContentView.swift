@@ -51,6 +51,12 @@ struct ContentView: View {
 
                                            HStack {
                                                Group {
+                                                   
+                                                   if !viewModel.errorMessage.isEmpty {
+                                                       Text(viewModel.errorMessage)
+                                                           .foregroundColor(Color.red)
+                                                   }
+                                                   
                                                    if showPassword {
                                                        TextField("Password", // how to create a secure text field
                                                                  text: $viewModel.password,
@@ -75,12 +81,13 @@ struct ContentView: View {
                                                }
 
                                            }.padding(.horizontal)
-                                
+                                            
+                                           
                                
                         
                                            Button {
-                                               print("do login action")
-                                               
+                                               viewModel.login()
+                                        
                                            } label: {
                                                Text("Sign In")
                                                    .font(.title2)
