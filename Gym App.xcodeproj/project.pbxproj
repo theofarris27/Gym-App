@@ -26,6 +26,8 @@
 		64A3923C2B61B87300E9A2C0 /* Gym_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A3923B2B61B87300E9A2C0 /* Gym_AppTests.swift */; };
 		64A392462B61B87300E9A2C0 /* Gym_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A392452B61B87300E9A2C0 /* Gym_AppUITests.swift */; };
 		64A392482B61B87300E9A2C0 /* Gym_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A392472B61B87300E9A2C0 /* Gym_AppUITestsLaunchTests.swift */; };
+		F0C3BA952B97D052003633BF /* cameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C3BA942B97D052003633BF /* cameraView.swift */; };
+		F0C3BA972B97D07D003633BF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C3BA962B97D07D003633BF /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		64A392412B61B87300E9A2C0 /* Gym AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gym AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A392452B61B87300E9A2C0 /* Gym_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym_AppUITests.swift; sourceTree = "<group>"; };
 		64A392472B61B87300E9A2C0 /* Gym_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F0C3BA942B97D052003633BF /* cameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraView.swift; sourceTree = "<group>"; };
+		F0C3BA962B97D07D003633BF /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,8 @@
 				6407F6B12B869FF400BA5351 /* RegistrationActivityView.swift */,
 				53BF807D2B8E91F10031CFAD /* LoginViewViewModel.swift */,
 				642588B82B97CB13000CCF18 /* SignInView.swift */,
+				F0C3BA942B97D052003633BF /* cameraView.swift */,
+				F0C3BA962B97D07D003633BF /* ImagePicker.swift */,
 			);
 			path = "Gym App";
 			sourceTree = "<group>";
@@ -302,10 +308,12 @@
 				6407F6B22B869FF400BA5351 /* RegistrationActivityView.swift in Sources */,
 				642588B92B97CB13000CCF18 /* SignInView.swift in Sources */,
 				53BF807E2B8E91F10031CFAD /* LoginViewViewModel.swift in Sources */,
+				F0C3BA972B97D07D003633BF /* ImagePicker.swift in Sources */,
 				64A3922D2B61B86F00E9A2C0 /* ContentView.swift in Sources */,
 				64A3922B2B61B86F00E9A2C0 /* Gym_AppApp.swift in Sources */,
 				646609E32B7C1B5A005BBEE1 /* contextMenu.swift in Sources */,
 				647690BD2B76D6300097782D /* navigationBarTest.swift in Sources */,
+				F0C3BA952B97D052003633BF /* cameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
