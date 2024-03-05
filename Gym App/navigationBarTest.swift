@@ -11,6 +11,7 @@ enum Tab: String, CaseIterable {
     case camera
     case house
     case leaf
+    case person
 }
 
 struct navigationBarTest: View {
@@ -18,6 +19,7 @@ struct navigationBarTest: View {
     private var fillImage: String {
         selectedTab.rawValue + ".fill"
     }
+        
     var body: some View {
         VStack{
             HStack{
