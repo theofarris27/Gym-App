@@ -16,6 +16,7 @@
 		6411D8EC2B8E92E00070DD8E /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6411D8EB2B8E92E00070DD8E /* FirebaseDatabaseSwift */; };
 		6411D8EE2B8E92E00070DD8E /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 6411D8ED2B8E92E00070DD8E /* FirebaseStorage */; };
 		6411D8F02B8E92FD0070DD8E /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6411D8EF2B8E92FD0070DD8E /* FirebaseAnalyticsSwift */; };
+		642588B92B97CB13000CCF18 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642588B82B97CB13000CCF18 /* SignInView.swift */; };
 		646609E32B7C1B5A005BBEE1 /* contextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646609E22B7C1B5A005BBEE1 /* contextMenu.swift */; };
 		647690BD2B76D6300097782D /* navigationBarTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647690BC2B76D6300097782D /* navigationBarTest.swift */; };
 		64A3922B2B61B86F00E9A2C0 /* Gym_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A3922A2B61B86F00E9A2C0 /* Gym_AppApp.swift */; };
@@ -48,6 +49,7 @@
 		53BF807D2B8E91F10031CFAD /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
 		6407F6B12B869FF400BA5351 /* RegistrationActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationActivityView.swift; sourceTree = "<group>"; };
 		6411D8E22B8E90CD0070DD8E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		642588B82B97CB13000CCF18 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		646609E22B7C1B5A005BBEE1 /* contextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contextMenu.swift; sourceTree = "<group>"; };
 		647690BC2B76D6300097782D /* navigationBarTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigationBarTest.swift; sourceTree = "<group>"; };
 		64A392272B61B86F00E9A2C0 /* Gym App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +127,7 @@
 				64A392302B61B87300E9A2C0 /* Preview Content */,
 				6407F6B12B869FF400BA5351 /* RegistrationActivityView.swift */,
 				53BF807D2B8E91F10031CFAD /* LoginViewViewModel.swift */,
+				642588B82B97CB13000CCF18 /* SignInView.swift */,
 			);
 			path = "Gym App";
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6407F6B22B869FF400BA5351 /* RegistrationActivityView.swift in Sources */,
+				642588B92B97CB13000CCF18 /* SignInView.swift in Sources */,
 				53BF807E2B8E91F10031CFAD /* LoginViewViewModel.swift in Sources */,
 				64A3922D2B61B86F00E9A2C0 /* ContentView.swift in Sources */,
 				64A3922B2B61B86F00E9A2C0 /* Gym_AppApp.swift in Sources */,
