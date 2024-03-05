@@ -36,10 +36,13 @@ struct ContentView: View {
                             SignInView(signedIn: $signedIn)
                             }
                             else if(tab.rawValue == "camera"){
-                                    Image(systemName: tab.rawValue)
-                                    Text("\(tab.rawValue.capitalized)")
-                                        .bold()
-                                        .animation(nil, value: selectedTab)
+                                NavigationView {
+                                    VStack {
+                                        NavigationLink(destination: cameraView()) {
+                                            Text("camera")
+                                        }
+                                    }
+                                }
                                 }
                             else {
                                     Text("login")

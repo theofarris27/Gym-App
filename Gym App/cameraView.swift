@@ -21,7 +21,7 @@ struct cameraView: View {
             
             VStack {
 
-                Image(uiImage: image ?? UIImage(named: "Levi")!)
+                Image(uiImage: image ?? UIImage(named: "hyunjun")!)
                     .resizable()
                     .frame(width: 300, height: 300)
                 
