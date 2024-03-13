@@ -23,7 +23,7 @@ struct cameraView: View {
 
                 Image(uiImage: image ?? UIImage(named: "hyunjun")!)
                     .resizable()
-                    .frame(width: 300, height: 300)
+                    .frame(width: 600, height: 450)
                 
                 Button("Choose Picture") {
                     self.showSheet = true
@@ -45,7 +45,7 @@ struct cameraView: View {
             }
                 
                 
-            .navigationBarTitle("Camera Demo")
+            .navigationBarTitle("Choose Photo")
             
         }.sheet(isPresented: $showImagePicker) {
             ImagePicker(image: self.$image, isShown: self.$showImagePicker, sourceType: self.sourceType)

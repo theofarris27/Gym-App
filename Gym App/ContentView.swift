@@ -36,13 +36,7 @@ struct ContentView: View {
                             SignInView(signedIn: $signedIn)
                             }
                             else if(tab.rawValue == "camera"){
-                                NavigationView {
-                                    VStack {
-                                        NavigationLink(destination: cameraView()) {
-                                            Text("camera")
-                                        }
-                                    }
-                                }
+                                cameraView()
                                 }
                             else {
                                     Text("login")
