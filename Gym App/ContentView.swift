@@ -16,7 +16,6 @@ struct ContentView: View {
     @State var showPassword: Bool = false
     @State var signInSuccess = false
     @State var showView = false
-    @State var signedIn = false
     
    
       
@@ -33,7 +32,7 @@ struct ContentView: View {
                         
                         VStack{
                             if(tab.rawValue == "leaf") {
-                            SignInView(signedIn: $signedIn)
+                            SignInRootView()
                             }
                             else if(tab.rawValue == "camera"){
                                 cameraView()

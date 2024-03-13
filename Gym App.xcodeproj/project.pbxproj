@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		53BF807E2B8E91F10031CFAD /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BF807D2B8E91F10031CFAD /* LoginViewViewModel.swift */; };
+		6402629B2BA242C200582640 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6402629A2BA242C200582640 /* AuthenticationManager.swift */; };
+		6402629F2BA2477500582640 /* SignInRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6402629E2BA2477500582640 /* SignInRootView.swift */; };
 		6407F6B22B869FF400BA5351 /* RegistrationActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6407F6B12B869FF400BA5351 /* RegistrationActivityView.swift */; };
 		6411D8E32B8E90CD0070DD8E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6411D8E22B8E90CD0070DD8E /* GoogleService-Info.plist */; };
 		6411D8E62B8E92E00070DD8E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6411D8E52B8E92E00070DD8E /* FirebaseAnalytics */; };
@@ -49,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		53BF807D2B8E91F10031CFAD /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
+		6402629A2BA242C200582640 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		6402629E2BA2477500582640 /* SignInRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRootView.swift; sourceTree = "<group>"; };
 		6407F6B12B869FF400BA5351 /* RegistrationActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationActivityView.swift; sourceTree = "<group>"; };
 		6411D8E22B8E90CD0070DD8E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		642588B82B97CB13000CCF18 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
@@ -122,18 +126,20 @@
 		64A392292B61B86F00E9A2C0 /* Gym App */ = {
 			isa = PBXGroup;
 			children = (
-				64A3922A2B61B86F00E9A2C0 /* Gym_AppApp.swift */,
 				64A3922C2B61B86F00E9A2C0 /* ContentView.swift */,
-				647690BC2B76D6300097782D /* navigationBarTest.swift */,
-				646609E22B7C1B5A005BBEE1 /* contextMenu.swift */,
+				6402629E2BA2477500582640 /* SignInRootView.swift */,
+				F0C3BA942B97D052003633BF /* cameraView.swift */,
+				642588B82B97CB13000CCF18 /* SignInView.swift */,
+				53BF807D2B8E91F10031CFAD /* LoginViewViewModel.swift */,
 				6411D8E22B8E90CD0070DD8E /* GoogleService-Info.plist */,
 				64A3922E2B61B87300E9A2C0 /* Assets.xcassets */,
 				64A392302B61B87300E9A2C0 /* Preview Content */,
 				6407F6B12B869FF400BA5351 /* RegistrationActivityView.swift */,
-				53BF807D2B8E91F10031CFAD /* LoginViewViewModel.swift */,
-				642588B82B97CB13000CCF18 /* SignInView.swift */,
-				F0C3BA942B97D052003633BF /* cameraView.swift */,
 				F0C3BA962B97D07D003633BF /* ImagePicker.swift */,
+				6402629A2BA242C200582640 /* AuthenticationManager.swift */,
+				646609E22B7C1B5A005BBEE1 /* contextMenu.swift */,
+				647690BC2B76D6300097782D /* navigationBarTest.swift */,
+				64A3922A2B61B86F00E9A2C0 /* Gym_AppApp.swift */,
 			);
 			path = "Gym App";
 			sourceTree = "<group>";
@@ -308,7 +314,9 @@
 				6407F6B22B869FF400BA5351 /* RegistrationActivityView.swift in Sources */,
 				642588B92B97CB13000CCF18 /* SignInView.swift in Sources */,
 				53BF807E2B8E91F10031CFAD /* LoginViewViewModel.swift in Sources */,
+				6402629B2BA242C200582640 /* AuthenticationManager.swift in Sources */,
 				F0C3BA972B97D07D003633BF /* ImagePicker.swift in Sources */,
+				6402629F2BA2477500582640 /* SignInRootView.swift in Sources */,
 				64A3922D2B61B86F00E9A2C0 /* ContentView.swift in Sources */,
 				64A3922B2B61B86F00E9A2C0 /* Gym_AppApp.swift in Sources */,
 				646609E32B7C1B5A005BBEE1 /* contextMenu.swift in Sources */,

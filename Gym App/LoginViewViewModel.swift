@@ -16,12 +16,20 @@ class LoginViewViewModel: ObservableObject {
     
     func login() {
         guard !email.trimmingCharacters(in: .whitespaces).isEmpty,
-              password.trimmingCharacters(in: .whitespaces).isEmpty else {
-            
+              !password.trimmingCharacters(in: .whitespaces).isEmpty else {
             errorMessage = "Please fill in all fields"
-            
             return
         }
+        
+        Task {
+            do {
+                let returnedUserData = try await AuthenticationManager.shared.createUser(email: email, password: password)
+                print("logged in")
+                print(returnedUserData)
+            } catch {
+            }
+        }
+      
     }
     
     func validate() {
