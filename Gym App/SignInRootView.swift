@@ -16,7 +16,19 @@ struct SignInRootView: View {
     var body: some View {
         ZStack {
             NavigationStack {
-                 Text("signed in view")
+                VStack {
+                    Text("signed in view")
+                    Button {
+                        SignInView(signedIn: $preSignIn)
+                    } label: {
+                        Text("Go back to sign in")
+                    }
+                    Button {
+                        RegistrationActivityView(signInSuccess: $preSignIn)
+                    } label: {
+                        Text("Go back to resitration")
+                    }
+                }
             }
         }
         .onAppear  {
