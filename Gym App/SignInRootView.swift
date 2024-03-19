@@ -18,18 +18,15 @@ struct SignInRootView: View {
             NavigationStack {
                 VStack {
                     Text("signed in view")
-                    Button {
-                        SignInView(signedIn: $preSignIn)
-                    } label: {
-                        Text("Go back to sign in")
+                    NavigationLink(destination: SignInView(signedIn: $preSignIn)){
+                        Text("Go Back to Sign In")
                     }
-                    Button {
-                        RegistrationActivityView(signInSuccess: $preSignIn)
-                    } label: {
-                        Text("Go back to resitration")
+                    NavigationLink(destination: RegistrationActivityView(signInSuccess: $preSignIn)){
+                        Text("Go Back to Registration")
                     }
+                    
                 }
-            }
+            }	
         }
         .onAppear  {
             let authUser = try? AuthenticationManager.shared.getAuthenticatedUser()

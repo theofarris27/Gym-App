@@ -32,7 +32,7 @@ struct ContentView: View {
                         
                         VStack{
                             if(tab.rawValue == "leaf") {
-                                SignInRootView(preSignIn: signInSuccess)
+                                SignInView(signedIn: $signInSuccess)
                             }
                             else if(tab.rawValue == "camera"){
                                 cameraView()
