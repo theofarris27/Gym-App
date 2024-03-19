@@ -11,6 +11,7 @@ struct SignInRootView: View {
     
     @State var showSignInView: Bool = false
     @State var signIn: Bool = false
+    @Binding var preSignIn: Bool
     
     var body: some View {
         ZStack {
@@ -23,7 +24,7 @@ struct SignInRootView: View {
             self.showSignInView = authUser == nil
         }
         
-        .fullScreenCover(isPresented: $showSignInView) {
+        .fullScreenCover(isPresented: $preSignIn) {
             NavigationStack{
                 SignInView(signedIn: $signIn)
             }

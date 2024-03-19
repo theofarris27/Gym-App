@@ -13,6 +13,7 @@ struct RegistrationActivityView: View {
        @State private var password: String = ""
     @Binding var signInSuccess: Bool
        @State private var showError = false
+    @StateObject var viewModel = LoginViewViewModel()
     
     var body: some View {
         VStack {
@@ -35,6 +36,7 @@ struct RegistrationActivityView: View {
                        // Your auth logic
                        if(self.userName == self.password) {
                            self.signInSuccess = true
+                           viewModel.login()
                        }
                        else {
                            self.showError = true
