@@ -11,7 +11,6 @@ class LoginViewViewModel: ObservableObject {
     @Published var email = ""
     @Published var password = ""
     @Published var errorMessage = ""
-    @State var signInSuccess: Bool?
     
     init () {}
     
@@ -42,14 +41,7 @@ class LoginViewViewModel: ObservableObject {
         Task {
             do {
                 let returnedUserData = try? AuthenticationManager.shared.getAuthenticatedUser()
-                if(returnedUserData != nil){
-                    signInSuccess = true
-                    SignInRootView(preSignIn: signInSuccess)
-                }
-                else{
-                    signInSuccess = false
-                    SignInRootView(preSignIn: signInSuccess)
-                }
+                SignInRootView(preSignIn: true)
             }
             catch{
                 

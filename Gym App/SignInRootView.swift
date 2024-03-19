@@ -11,7 +11,7 @@ struct SignInRootView: View {
     
     @State var showSignInView: Bool = false
     @State var signIn: Bool = false
-    @Binding var preSignIn: Bool
+    @State var preSignIn: Bool
     
     var body: some View {
         ZStack {
@@ -26,12 +26,9 @@ struct SignInRootView: View {
         
         .fullScreenCover(isPresented: $preSignIn) {
             NavigationStack{
-                SignInView(signedIn: $signIn)
+                SignInView(signedIn: $preSignIn)
             }
         }
     }
 }
 
-#Preview {
-    SignInRootView()
-}
