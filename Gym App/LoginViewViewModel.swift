@@ -40,11 +40,10 @@ class LoginViewViewModel: ObservableObject {
         }
         Task {
             do {
-                let returnedUserData = try? AuthenticationManager.shared.getAuthenticatedUser()
-                SignInRootView(preSignIn: true)
-            }
-            catch{
-                
+                let returnedUserData = try AuthenticationManager.shared.getAuthenticatedUser()
+                print("logged in")
+                print(returnedUserData)
+            } catch {
             }
         }
     }
